@@ -1,24 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eFE-Je-kRw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Second View Controller-->
+        <scene sceneID="K7w-nN-QWd">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="tNZ-MY-AKa" customClass="SecondViewController" customModule="codes_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Q5-hh-MBJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.22697559951018931" green="0.56300622951191592" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="A8c-bj-O27"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ip-ac-zjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="-1113"/>
+        </scene>
+        <!--Monday-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="codes_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDb-pH-ePY">
+                                <rect key="frame" x="138" y="478" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="7xV-bj-8jc"/>
+                                    <constraint firstAttribute="width" secondItem="tDb-pH-ePY" secondAttribute="height" multiplier="1:1" id="fkD-cm-1hb"/>
+                                </constraints>
+                                <state key="normal" title="Camera" image="cameraButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tNZ-MY-AKa" kind="show" id="68m-bU-a3I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97085324885412272" green="0.5495131776482316" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="tDb-pH-ePY" secondAttribute="bottom" constant="40" id="MWd-EK-g6p"/>
+                            <constraint firstItem="tDb-pH-ePY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SWN-h8-4w8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Monday" image="Monday" id="P5Y-KZ-zY7">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="tDb-pH-ePY" id="emY-Dr-f2k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="374" y="-1113"/>
+        </scene>
+        <!--Tuesday-->
+        <scene sceneID="M0Z-hQ-x6O">
+            <objects>
+                <viewController id="qIk-eW-KRs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JXo-DE-h1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="gsT-Fb-WT3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tuesday" image="Tuesday" id="cSE-zR-8MC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9R-Qm-Cin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="-290"/>
+        </scene>
+        <!--Wednesday-->
+        <scene sceneID="E4d-pz-Gqg">
+            <objects>
+                <viewController id="G71-yL-VPI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aYe-J5-xdq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="29B-o4-IeT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wednesday" image="Wednesday" id="yXA-rW-zxq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccM-Cf-Nu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="467"/>
+        </scene>
+        <!--Thursday-->
+        <scene sceneID="9bt-jB-31G">
+            <objects>
+                <viewController id="J22-4I-KtP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nec-Q4-Jic">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Fg7-vc-RDg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Thursday" image="Thursday" id="8d0-8O-71v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDE-6S-xRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="1532"/>
+        </scene>
+        <!--Friday-->
+        <scene sceneID="cdN-H2-2II">
+            <objects>
+                <viewController id="SCN-7H-bo3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fwy-1Z-eF9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2Cu-5X-sEW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Friday" image="Friday" id="rA1-AV-Hdq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="68K-eh-WhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="2643"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rFe-Eg-gCn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eFE-Je-kRw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="r7j-In-6Cm">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="1" green="0.3419824558026916" blue="0.97032369272151142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ano-Gn-t9i"/>
+                        <segue destination="qIk-eW-KRs" kind="relationship" relationship="viewControllers" id="uFh-Cc-rz8"/>
+                        <segue destination="G71-yL-VPI" kind="relationship" relationship="viewControllers" id="Ipk-dW-7RW"/>
+                        <segue destination="J22-4I-KtP" kind="relationship" relationship="viewControllers" id="dcY-Y2-6oy"/>
+                        <segue destination="SCN-7H-bo3" kind="relationship" relationship="viewControllers" id="htc-W0-WSd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dM-3N-so5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1474" y="534"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Friday" width="37" height="37"/>
+        <image name="Monday" width="37" height="37"/>
+        <image name="Thursday" width="37" height="37"/>
+        <image name="Tuesday" width="37" height="37"/>
+        <image name="Wednesday" width="37" height="37"/>
+        <image name="cameraButton" width="120" height="120"/>
+    </resources>
 </document>

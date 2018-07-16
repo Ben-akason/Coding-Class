@@ -14,6 +14,7 @@
 		B23F3EBC20FD17F5001EBC07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23F3EBA20FD17F5001EBC07 /* LaunchScreen.storyboard */; };
 		B23F3EC720FD17F5001EBC07 /* codes_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F3EC620FD17F5001EBC07 /* codes_Tests.swift */; };
 		B23F3ED220FD17F5001EBC07 /* codes_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F3ED120FD17F5001EBC07 /* codes_UITests.swift */; };
+		B23F3EE020FD19FD001EBC07 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F3EDF20FD19FD001EBC07 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B23F3ECD20FD17F5001EBC07 /* codes>UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "codes>UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23F3ED120FD17F5001EBC07 /* codes_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codes_UITests.swift; sourceTree = "<group>"; };
 		B23F3ED320FD17F5001EBC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23F3EDF20FD19FD001EBC07 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				B23F3EB120FD17F1001EBC07 /* AppDelegate.swift */,
 				B23F3EB320FD17F1001EBC07 /* ViewController.swift */,
 				B23F3EB520FD17F1001EBC07 /* Main.storyboard */,
+				B23F3EDF20FD19FD001EBC07 /* SecondViewController.swift */,
 				B23F3EB820FD17F5001EBC07 /* Assets.xcassets */,
 				B23F3EBA20FD17F5001EBC07 /* LaunchScreen.storyboard */,
 				B23F3EBD20FD17F5001EBC07 /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23F3EE020FD19FD001EBC07 /* SecondViewController.swift in Sources */,
 				B23F3EB420FD17F1001EBC07 /* ViewController.swift in Sources */,
 				B23F3EB220FD17F1001EBC07 /* AppDelegate.swift in Sources */,
 			);
@@ -431,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAXQC4ZSYG;
 				INFOPLIST_FILE = "codes>/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAXQC4ZSYG;
 				INFOPLIST_FILE = "codes>/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
